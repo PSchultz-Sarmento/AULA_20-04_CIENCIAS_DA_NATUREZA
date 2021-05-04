@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🦠Funções Orgânicas🦠</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!--Meu css-->
+    <link rel="stylesheet" href="css\css.css">   
+
+  </head>
+
+
+<body>
+
+<div class="ladoAlado">
+        <h1>Funções Orgânicas</h1>
+
+            <br><br>
+
+                <label style="font-size: 130%;">Escolha sua Molécula:⠀</label>
+
+    <select type="number" id="selctedMolecule">
+        <option value="0">Selecione sua Molécula</option>
+        <option value="1">Aldeído - CnH2nO</option>
+        <option value="2">Cetona - C3H6O</option>
+        <option value="3">Éster - R-COOR</option>
+        <option value="4">Éter - (C2H5)2O</option>
+        <option value="5">Fenol - C6H6O</option>
+        <option value="6">Alcinos - CnH2n -²</option>
+        <option value="7">Ciclano - CnH2n</option>
+        <option value="8">Alcanos</option>
+        <option value="9">Alcenos - CnH2n.</option>
+        <option value="10">Alcadieno</option>
+        <!-- <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>-->
+    </select>
+
+
+    <button type="submit"  onclick=MostrarMolecula()>Mostrar Molécula ❯</button>
+</div>
+
+<br><br><br>
+
+
+<div class="float-container">
+
+    <div>
+
+        <img id="img" src="img\PH.png">
+
+    </div>
+
+    <p>⠀⠀⠀</p>
+
+    <div class="txtFormat" >
+
+        <p id="descricao"> Algumas Informações da sua Molécula
+        </p>
+
+    </div>
+
+</div>
+
+<script type="text/javascript">
+
+    function MostrarMolecula(){
+
+        var selctedMolecule = document.getElementById('selctedMolecule').value
+
+    switch(selctedMolecule){
+        case "1" :
+            document.getElementById("descricao").innerHTML = "CARACTERÍSTICAS GERAIS: Função orgânica que apresenta como principal característica a presença do grupo carbonila (C=O) na extremidade da cadeia carbônica.<br><br> CARACTERÍSTICAS FÍSICAS:<br> São substâncias extremamente reativas;<br> Apresentam densidade menor que a da água;<br> O estado físico depende da quantidade de carbonos no aldeído;<br> Suas moléculas são polares;<br> Em sua maioria, apresentam odores agradáveis;<br> Apresentam fácil combustibilidade;<br><br> UTILIZAÇÃO: Produção de: Perfumes, plásticos, espelhos, desinfetantes, resinas e inseticidas. Utilizado na indústria farmacêutica e alimentícia e usado como solvente industrial.";
+            document.getElementById("img").src = "img/aldeido.png";
+        break
+        
+        case "2" :
+            document.getElementById("descricao").innerHTML = "CARACTERÍSTICAS GERAIS: Substâncias orgânicas onde o grupo funcional carbonila se encontra ligado a dois átomos de carbono.<br><br> CARACTERÍSTICAS FÍSICAS:<br> As cetonas apresentam carbonil mas o carbono da carbonila das cetonas é secundário, é preciso que entre essa ligação dupla haja um carbono de cada lado;<br> As cetonas são classificadas de acordo com o número de carbonilas que apresentam na sua composição. As monocetonas tem apenas 1 carbonila, enquanto as policetonas tem 2 ou mais carbonilas.  Elas também podem ser simétricas ou assimétricas. As cetonas simétricas são ligadas à carbonila por dois radicais idênticos. Enquanto as assimétricas são ligadas por dois radicais diferentes; A estrutura das cetonas é parecida com a dos aldeídos.  Esse composto orgânico é inflamável, incolor, solúvel em água, tem um ponto de ebulição grande.  As cetonas são estáveis e não se oxidam de forma fácil. A maior parte delas é líquida;<br><br> UTILIZAÇÃO: Na indústria alimentícia: extração de óleos e gorduras de sementes, utilizada para retirar esmaltes das unhas, solvente na fabricação de resinas de remédios, na indústria de perfumaria, e utilizada para extrair cocaína das folhas de coca.";
+            document.getElementById("img").src = "img/cetona.png";
+        break
+
+        case "3" :
+            document.getElementById("descricao").innerHTML = "CARACTERÍSTICAS GERAIS: Os ésteres são compostos orgânicos oxigenados que são formados pela reação química entre um ácido carboxílico e um álcool.<br><br> CARACTERÍSTICAS FÍSICAS: Possuem aroma de frutas e flores;<br> Ésteres de baixa massa molar são líquidos à temperatura ambiente e os de alta massa molar são sólidos;<br> Quando comparados com os alcoóis e ácidos carboxílicos, os ésteres apresentam pontos de fusão e ebulição mais baixos;<br> Em comparação com a água, os ésteres de menor massa molar são menos densos;<br> Os ésteres de menor massa molar são polares e os de maior massa molar são apolares;<br> Nos ésteres polares, predominam forças dipolo permanente; já nos apolares, predominam forças dipolo induzido; <br> Os ésteres de menor massa molar são pouco solúveis em água e os de maior massa são insolúveis em água.<br><br> UTILIZAÇÃO: Utilizados como flavorizantes em alimentos industrializados, utilizados na fabricação de medicamentos, cosméticos, perfumes e ceras.";
+            document.getElementById("img").src = "img/ester.png";
+        break
+        
+        case "4" :
+            document.getElementById("descricao").innerHTML = "CARACTERÍSTICAS GERAIS: Função orgânica oxigenada;<br> Característico por apresentar dois radicais orgânicos ligados a um átomo de oxigênio. <br><br> CARACTERÍSTICAS FÍSICAS: Quando o éter apresenta de quatro a mais átomos de carbono em sua composição, apresenta-se no estado líquido; <br> Quando comparados com outros compostos orgânicos de massa molar aproximada, possuem ponto de fusão semelhante ao dos alcanos e menor que o restante dos compostos orgânicos; <br> São compostos que apresentam uma densidade pequena quando comparados à água; <br> Os éteres são compostos com baixa polaridade, interagindo entre si por uma fraca interação dipolo permanente. Com a água e com os alcoóis, os éteres possuem a capacidade de interagir por meio de ligações de hidrogênio. São polares. São substâncias que exalam um odor muito agradável, porém sua inalação pode provocar dependência. <br><br> UTILIZAÇÃO: Como solventes inertes, na extração de essências, óleos e gorduras.";
+            document.getElementById("img").src = "img/eter.png";
+        break
+        
+        case "5" :
+            document.getElementById("descricao").innerHTML = "CARACTERÍSTICAS GERAIS: Composto orgânico oxigenado que possuem o grupo hidroxila (OH) ligado diretamente a um hidrocarboneto aromático qualquer.<br><br> CARACTERÍSTICAS FÍSICAS: Em temperatura ambiente, a grande maioria dos fenóis apresenta-se em estado sólido. Os fenóis mais simples apresentam-se em estado líquido;<br> Ponto de fusão e de ebulição elevados quando comparados aos dos hidrocarbonetos;<br> São compostos mais densos que a água;<br> Apresentam moléculas polares;<br> Apenas o hidroxibenzeno é solúvel em água;<br> São compostos que sofrem reações de oxidação;<br> Apresentam um relevante caráter ácido, muito maior que o dos álcoois;<br><br>	UTILIZAÇÃO: Fabricação de desinfetantes, produção de creme para queimadura solar, princípio ativo para o tratamento de manchas na pele produção de resinas matéria-prima para a produção do indicador ácido-base fenolftaleína, utilizados na produção de sal orgânico e de outras substâncias orgânicas de diversos grupos funcionais.";
+            document.getElementById("img").src = "img/fenol.png";
+        break
+        
+        case "6" :
+            document.getElementById("descricao").innerHTML = "CARACTERÍSTICAS GERAIS: Os alcinos são hidrocarbonetos que possuem tripla ligação entre átomos de carbono. São conhecidos também como hidrocarbonetos etínicos ou hidrocarbonetos acetilênicos.<br><br> CARACTERÍSTICAS FÍSICAS: Os alcinos possuem características físicas como os alcanos e alcenos, ou seja, também apresentam pontos de fusão e ebulição crescentes com o aumento da cadeia carbônica (massa molecular). Essa classe de compostos, os alcinos, não possui cor (incolor), nem cheiro (inodoro), apresentam insolubilidade em água, mas são solúveis em solventes orgânicos como o álcool, o éter e outros. O acetileno, ao contrário dos outros alcinos, tem cheiro agradável e é parcialmente solúvel em água, e é a partir dele que se obtêm solúveis não inflamáveis. Os alcinos são preparados em laboratório porque não se encontram livres na natureza.<br><br> UTILIZAÇÃO: Esse hidrocarboneto é importantíssimo na indústria. O acetileno (que pertence à classe dos alcinos e também conhecido como etino) é usado em grande escala na fabricação de borrachas sintéticas, plásticos, como o PVC e PVA, e ainda de fios têxteis para a produção de tecidos.<br><br>";
+            document.getElementById("img").src = "img/alcinos.png";
+        break
+        
+        case "7" :
+            document.getElementById("descricao").innerHTML = "CARACTERÍSTICAS GERAIS: Os ciclanos, também denominados cicloalcanos ou cicloparafinas, são hidrocarbonetos cíclicos. Representam o composto que resulta da retirada de dois átomos de hidrogênio e dois de carbono de um alcano para formar um ciclo.<br><br> CARACTERÍSTICAS FÍSICAS:<br>Todos os compostos dos ciclanos têm hibridação sp3<br>Apresentam uma ligação simples<br>São hidrocarbonetos saturados<br>Têm reatividade química semelhante à dos alcanos<br>São obtidos a partir da síntese de Wurtz a que são submetidos os derivados di-halogenados<br>São instáveis quando submetidos a elevada pressão<br><br>UTILIZAÇÃO: Os ciclanos são obtidos a partir do petróleo e na indústria química são transformados em produtos para cabelo, solventes, removedores de tinta, vernizes e o náilon.<br>";
+            document.getElementById("img").src = "img/ciclano.png";
+        break
+        
+        case "8" :
+            document.getElementById("descricao").innerHTML = "CARACTERÍSTICAS GERAIS: Os alcanos são hidrocarbonetos que apresentam apenas ligações simples e cadeias abertas, ou seja, são saturados e acíclicos. Esses compostos também são chamados de hidrocarbonetos parafínicos ou parafinas.<br><br>	CARACTERÍSTICAS FÍSICAS:<br>Incolores<br>Pouco reativos, pois a ligação entre o C e H é bastante estável<br>Odor de petróleo<br>Insolúveis em água<br>Solúveis em solventes orgânicos como éter, álcool e benzeno<br>Os pontos de fusão, ebulição e a densidade aumentam com a massa molecular<br><br>UTILIZAÇÃO: Os alcanos são responsáveis por formar o petróleo e o gás natural. ";
+            document.getElementById("img").src = "img/alcano.png";
+        break
+        
+        case "9" :
+            document.getElementById("descricao").innerHTML = "CARACTERÍSTICAS GERAIS: Os alcenos ou alquenos são hidrocarbonetos que apresentam uma ligação dupla em sua cadeia carbônica. Esses compostos são formados por átomos de carbono, motivo pelo qual também são chamados de compostos carbônicos.<br><br> CARACTERÍSTICAS FÍSICAS:<br>Incolores<br>Insolúveis em água<br>Solúveis em álcool e éter<br>Eles são mais reativos do que os alcanos<br>Os pontos de fusão e ebulição são superiores aos dos alcanos com igual número de átomos de carbono<br>O alceno mais simples é o eteno ou etileno<br><br>UTILIZAÇÃO:<br>A maioria dos alcenos são produzidos em laboratório e poucos são encontrados na natureza.";
+            document.getElementById("img").src = "img/alceno.png";
+        break
+        
+        case "10" :
+            document.getElementById("descricao").innerHTML = "CARACTERÍSTICAS GERAIS: <br>Os alcadienos ou dienos são hidrocarbonetos de cadeia carbônica aberta e que apresentam duas ligações duplas.De modo geral, a fórmula dos alcadienos é CnH2n-2.Os alcadienos são classificados conforme a posição de suas insaturações:<br>Dienos acumulados: As duas ligações duplas ocorrem em carbonos vizinhos.<br>Dienos isolados: As duas duplas ligações pertencem a carbonos diferentes, além de serem separadas por no mínimo duas ligações simples ou um carbono saturado.<br>Dienos conjugados: As duplas ligações apresentam-se de modo alternado.<br><br>CARACTERÍSTICAS FÍSICAS:<br> O isopropeno (C5H8) é o alcadieno mais representativo, caracterizado como uma substância orgânica incolor e volátil. <br><br>	UTILIZAÇÃO:<br>No cotidiano, os alcadienos mais importantes são chamados de terpenos. Mas, de forma resumida, esse é um grupo de compostos formado pela união de várias moléculas de isopreno Na natureza, os terpenos compõem principalmente os óleos essenciais extraídos dos vegetais e frutas para a produção de perfumes e agentes de sabor. Entre eles, temos o limoneno, um óleo essencial extraído das cascas do limão e da laranja. Ele possui a estrutura formada pela união de duas moléculas de isopreno";
+            document.getElementById("img").src = "img/alcadieno.png";
+        break
+        
+        /*case "11" :
+            document.getElementById("descricao").innerHTML = "DESCRIÇÃO DA MOLÉCULA";
+            document.getElementById("img").src = "CAMINHO DA IMAGEM";
+        break
+        
+        case "12" :
+            document.getElementById("descricao").innerHTML = "DESCRIÇÃO DA MOLÉCULA";
+            document.getElementById("img").src = "CAMINHO DA IMAGEM";
+        break
+        
+        case "13" :
+            document.getElementById("descricao").innerHTML = "DESCRIÇÃO DA MOLÉCULA";
+            document.getElementById("img").src = "CAMINHO DA IMAGEM";
+        break
+        
+        case "14" :
+            document.getElementById("descricao").innerHTML = "DESCRIÇÃO DA MOLÉCULA";
+            document.getElementById("img").src = "CAMINHO DA IMAGEM";
+        break
+        
+        case "15" :
+            document.getElementById("descricao").innerHTML = "DESCRIÇÃO DA MOLÉCULA";
+            document.getElementById("img").src = "CAMINHO DA IMAGEM";
+        break*/
+        
+}
+
+    }
+
+</script>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>

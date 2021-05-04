@@ -1,0 +1,53 @@
+html, body {
+    height: 10%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    background-color: #261a3c;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1,h2,h3,h4,h5,h6,p,b,label{
+    text-align: center;
+    color: #32B5BF;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+select,option,button{
+    background-color: #32B5BF;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding: 1.5%;
+    border-radius: 10px;
+    border-style: none;   
+    
+}
+
+.float-container{
+    display: flex;
+}
+
+.float-div{
+    flex: 1
+
+}
+
+img{
+    border-radius: 5%;
+    background-color: #32B5BF;
+}
+
+.txtFormat{
+    width:400px;
+    
+}
+
+th {
+    text-align: inherit;
+    text-align: -webkit-match-parent;
+}
